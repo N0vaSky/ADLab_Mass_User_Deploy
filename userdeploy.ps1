@@ -128,7 +128,7 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
         
         Write-Host "Successfully created user: $username" -ForegroundColor Green
     } catch {
-        Write-Host "Error creating user $username: $_" -ForegroundColor Red
+        Write-Host "Error creating user $username`: $($_.Exception.Message)" -ForegroundColor Red
     }
 }
 
@@ -169,7 +169,7 @@ foreach ($n in $ADMIN_FIRST_LAST_LIST) {
         
         Write-Host "Successfully created Domain Admin: $username" -ForegroundColor Yellow
     } catch {
-        Write-Host "Error creating Domain Admin $username: $_" -ForegroundColor Red
+        Write-Host "Error creating Domain Admin $username`: $($_.Exception.Message)" -ForegroundColor Red
     }
 }
 
