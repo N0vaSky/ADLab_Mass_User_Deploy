@@ -114,7 +114,7 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
                    -GivenName $first `
                    -Surname $last `
                    -DisplayName "$first $last" `
-                   -Name $username `
+                   -Name "$first $last" `
                    -SamAccountName $username `
                    -UserPrincipalName "$username@$EMAIL_DOMAIN" `
                    -EmailAddress $emailAddress `
@@ -153,7 +153,7 @@ foreach ($n in $ADMIN_FIRST_LAST_LIST) {
                    -GivenName $first `
                    -Surname $last `
                    -DisplayName "[ADMIN] $first $last" `
-                   -Name $username `
+                   -Name "$first $last" `
                    -SamAccountName $username `
                    -UserPrincipalName "$username@$EMAIL_DOMAIN" `
                    -EmailAddress $emailAddress `
